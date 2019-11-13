@@ -1,11 +1,32 @@
-#titre {
-    background-color: #5ba7ea;
+body {
     font-family: 'Burbank Big Condensed';
-    color: white;
-    border: 2px solid;
-    border-radius: 20px;
+    font-size: 150%;
+    padding: 150px; 
+}
+body {
     text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+}
+article {
+    text-align: center;
+    width: 650px;
+}
+img {
+    width: 10%;
+}
+#titre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#titre h1 {
+    padding-top: auto;
+}
+
+#naveuh {
+    text-align: center;
+    border: 2px solide black;
+    background-image: url('images/Cone.png');
+    background-repeat: repeat;
+    background-origin: border-box;
+    background-size: 10%;
 }
