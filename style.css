@@ -26,7 +26,7 @@ img {
     text-align: center;
     border: 2px solide black;
     background-image: url('images/Cone.png');
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     background-origin: border-box;
-    background-size: 10%;
+    background-size: 20%;
 }
