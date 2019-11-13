@@ -1,0 +1,11 @@
+#titre {
+    background-color: #5ba7ea;
+    font-family: 'Burbank Big Condensed';
+    color: white;
+    border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
