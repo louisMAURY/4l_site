@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>4Y Trophy</title>
+        <title>4Y Trophy, Accueil</title>
         <link src="style.css" type="stylesheet" />
     </head>
     <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="blog.php">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul>
