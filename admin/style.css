@@ -1,0 +1,32 @@
+body {
+    font-family: 'Burbank Big Condensed';
+    font-size: 150%;
+    padding: 150px; 
+}
+body {
+    text-align: center;
+}
+article {
+    text-align: center;
+    width: 650px;
+}
+img {
+    width: 10%;
+}
+#titre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#titre h1 {
+    padding-top: auto;
+}
+
+#naveuh {
+    text-align: center;
+    border: 2px solide black;
+    background-image: url('images/Cone.png');
+    background-repeat: repeat-x;
+    background-origin: border-box;
+    background-size: 20%;
+}

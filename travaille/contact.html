@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>4Y Trophy, Blog</title>
+    <link src="style.css" type="stylesheet" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+        </ul>
+    </nav>
+    <form action="traitement.php" method="post">
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="nom@exemple.com" autofocus required />
+        </p>
+        <p>
+            <label for="nom">Nom/Prénom:</label>
+            <input type="text" name="nom" id="nom" placeholder="Nom Prénom" autofocus required />
+        </p>
+        <p>
+            <label for="societe">Société:</label>
+            <input type="text" name="societe" id="societe" placeholder="Exemple corp." autofocus />
+        </p>
+        <p>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Tapez votre message..."></textarea>
+        </p>
+        <p><input type="submit" name="submit" value="Envoyer" /></p>
+    </form>
+</header>
+</body>
+</html>

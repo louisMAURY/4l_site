@@ -11,7 +11,7 @@
             <ul>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="blog.php">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul>
                 <li>Facebook</li>
