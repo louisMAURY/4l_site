@@ -30,3 +30,6 @@ img {
     background-origin: border-box;
     background-size: 20%;
 }
+#article_id {
+    display: none;
+}

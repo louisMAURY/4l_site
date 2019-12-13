@@ -49,18 +49,27 @@
         die(sprintf("Connection failed: %s", $conn->connect_error));
     }
 
-    $sql = "SELECT titre, contenu, image_lien FROM articles;";
-    $result = $conn->query($sql);
+    $sql1 = "SELECT titre, contenu, image_lien, article_id FROM articles;";
+    $result = $conn->query($sql1);
 
     if($result->num_rows > 0)
     {
         while($row = $result->fetch_assoc())
         {
-            echo sprintf("<img src='%s'/>", $row["image_lien"]);
-            echo sprintf("<h3>%s</h3>", $row["titre"]);
-            echo sprintf("<p>%s</p>", $row["contenu"]);
+            echo sprintf("
+                <div class='article'>
+                    <form action='update_articles.php' method='POST'>
+                        <img class='miniature' src='%s'/>
+                        <label>Titre de l'article</label>
+                        <input type='text' id='article_id' name='article_id' value='%d' >
+                        <input value='%s' name='titre'>
+                        <label>Contenu de l'article (limite 2000 caractères)</label>
+                        <textarea rows='20' cols='100' maxlength='2000' name='contenu' required>%s</textarea>
+                        <input type='submit' id='update' value='Mettre à jour' />
+                    </form>
+                </div>
+            ", $row["image_lien"], $row["article_id"], $row["titre"], $row["contenu"]);
         }
-        echo "</table>";
     }
     else
     {
@@ -68,6 +77,35 @@
     }
     $conn->close();
     ?>
+    <!--
+    <form action="traitement.php" method="POST">
+        <h1>Connexion</h1>
+
+        <label><b>Nom d'utilisateur</b></label>
+        <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+        <label><b>Mot de passe</b></label>
+        <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+        <input type="submit" id='submit' value='LOGIN' >
+    </form>
+    -->
 </div>
 </body>
 </html>
+
+            <?php
+/*
+<div class='article'>
+    <form action='update_articles.php' method='POST'>
+        <img class='miniature' src='%s'/>
+        <label>Titre de l'article</label>
+        <input value='%s' name='titre'>
+        <label>Contenu de l'article (limite 2000 caractères)</label>
+        <textarea rows='20' cols='100' maxlength='2000' name='contenu' required>%s</textarea>
+        <input type='submit' id='update' value='Mettre à jour' />
+    </form>
+</div>
+", $row["image_lien"], $row["titre"], $row["contenu"]);
+*/
+?>
